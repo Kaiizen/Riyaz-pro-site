@@ -111,3 +111,7 @@
 
             return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
         }
+
+        function showComingSoon() {
+            alert("Android app coming soon...!");
+        }

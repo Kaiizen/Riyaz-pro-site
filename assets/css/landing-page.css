@@ -415,6 +415,7 @@ a:focus, a:active {
   right: 8px;
 }
 
+
 .section {
   padding: 30px 0;
   position: relative;
@@ -677,26 +678,26 @@ a:focus, a:active {
   opacity: 1;
 }
 
-.btn-pinterest {
+.btn-instagram {
   border-color: #cc2127;
   color: #cc2127;
 }
-.btn-pinterest:hover, .btn-pinterest:focus, .btn-pinterest:active, .btn-pinterest.active, .open > .btn-pinterest.dropdown-toggle {
+.btn-instagram:hover, .btn-instagram:focus, .btn-instagram:active, .btn-instagram.active, .open > .btn-instagram.dropdown-toggle {
   background-color: transparent;
   color: #cc2127;
   border-color: #cc2127;
   opacity: 1;
 }
-.btn-pinterest:disabled, .btn-pinterest[disabled], .btn-pinterest.disabled {
+.btn-instagram:disabled, .btn-instagram[disabled], .btn-instagram.disabled {
   background-color: transparent;
   border-color: #cc2127;
 }
-.btn-pinterest.btn-fill {
+.btn-instagram.btn-fill {
   color: white;
   background-color: #cc2127;
   opacity: 0.9;
 }
-.btn-pinterest.btn-fill:hover, .btn-pinterest.btn-fill:focus, .btn-pinterest.btn-fill:active, .btn-pinterest.btn-fill.active, .open > .btn-pinterest.btn-fill.dropdown-toggle {
+.btn-instagram.btn-fill:hover, .btn-instagram.btn-fill:focus, .btn-instagram.btn-fill:active, .btn-instagram.btn-fill.active, .open > .btn-instagram.btn-fill.dropdown-toggle {
   background-color: #cc2127;
   color: white;
   opacity: 1;
@@ -808,6 +809,23 @@ a:focus, a:active {
 .landing-page .carousel.fade {
   opacity: 1;
 }
+.special{
+  margin-left: 80px;
+}
+@media  (min-width: 767px){
+  .show-case{
+    margin-left: -65px;
+  }
+}
+@media (max-width: 766){
+  .special{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+}
 .landing-page .carousel.fade .item {
   -moz-transition: opacity ease-in-out .7s;
   -o-transition: opacity ease-in-out .7s;
@@ -838,7 +856,7 @@ a:focus, a:active {
 .logo-container .logo{
     overflow: hidden;
     border-radius: 50%;
-    border: 1px solid #333333;
+    border: none;
     width: 50px; 
     float: left;
 }
@@ -867,7 +885,26 @@ a:focus, a:active {
 .landing-page2 .container{
   max-width: 1170px;
 }
-
+.contact-section .header-text{
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  margin-top: 100px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  position: relative;
+  line-height: 29px;
+}
+.about-section .header-text{
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  margin-top: 100px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  position: relative;
+  line-height: 29px;
+}
  .header-text{
       text-transform: uppercase;
       font-weight: 200;
@@ -875,7 +912,7 @@ a:focus, a:active {
       margin-bottom: 20px;
       font-size: 30px;
       position: relative;
-      line-height: 24px;
+      line-height: 29px;
 }
 
 .landing-page .navbar-top {
@@ -990,6 +1027,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
   width: 100%;
   height: 100%;
 }
+
 .landing-page .parallax .parallax-background img{
   width: 100%;
   height: auto;
@@ -1173,16 +1211,147 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
    .landing-page .section-demo .carousel-inner{
         border-radius: 10px;
         box-shadow: 0 1px 4px rgba(0, 0, 0, 0.23);
+        text-align: center;
+  }
+  .about-section .row{
+      position: relative;
+      z-index: 1;
+      background-color: rgba(151, 149, 149, 0.5);
+      padding: 50px;
+      margin-top: 20px;
+      margin-bottom: 200px;
+      overflow-y: scroll;
+      max-height: calc(100vh - 300px);
+  }
+  .landing-page .about-section{
+    margin: 200px 0;
+  }
+  .landing-page .about-section .card{
+    width: 100%;
+    color: rgb(44, 44, 44);
+    min-height: 300x;
+    padding: 10px 30px 5px 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+    background-color: rgba(151, 149, 149, 0.5);
+}
+.landing-page .about-section .card .icon i{
+font-size: 63px;
+color: #425875;
+width: 85px;
+height: 60px;
+line-height: 80px;
+text-align: center;
+border-radius: 50%;
+margin: 0 auto;
+margin-top: 20px;
+}
+@media(max-width: 450px){
+  .landing-page .about-section .card{
+    width: 100%;
+    color: rgb(44, 44, 44);
+    min-height: 600px;
+    padding: 10px 30px 5px 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+    background-color: rgba(151, 149, 149, 0.5);
+
+}
+.landing-page .about-section .card .icon i{
+  font-size: 63px;
+  color: #425875;
+  width: 85px;
+  height: 60px;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  }
+  .landing-page .about-section .col-md-12{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .landing-page .about-section .index{
+    width: 100%;
+  }
+  .landing-page .about-section .obj{
+    height: 1080px;
+  }
+}
+
+.landing-page .contact-section{
+    margin: 200px 0;
+}
+.landing-page .contact-section .card{
+        width: 100%;
+        color: rgb(44, 44, 44);
+        min-height: 300x;
+        padding: 10px 30px 5px 30px;
+        border-radius: 10px;
+        margin-top: 30px;
+        text-align: center;
+        background-color: rgba(151, 149, 149, 0.5);
+  }
+  .landing-page .contact-section .card .icon i{
+    font-size: 63px;
+    color: #425875;
+    width: 85px;
+    height: 60px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  @media(max-width: 450px){
+    .landing-page .contact-section{
+      margin: 200px 0;
+  }
+  .landing-page .contact-section .card{
+          width: 100%;
+          color: rgb(44, 44, 44);
+          min-height: 300x;
+          padding: 10px 30px 5px 30px;
+          border-radius: 10px;
+          margin-top: 30px;
+          text-align: center;
+          background-color: rgba(151, 149, 149, 0.5);
+    }
+    .landing-page .contact-section .card .icon i{
+      font-size: 63px;
+      color: #425875;
+      width: 85px;
+      height: 60px;
+      line-height: 80px;
+      text-align: center;
+      border-radius: 50%;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+    .contact-section .row{
+      position: relative;
+      z-index: 1;
+      background-color: rgba(151, 149, 149, 0.5);
+      padding: 50px;
+      margin-top: 20px;
+      margin-bottom: 200px;
+      overflow-y: scroll;
+      max-height: calc(100vh - 300px);
+    }
   }
 
    .landing-page .section-features{
         margin: 50px 0;
    }
-
    .landing-page .section-features .card{
         width: 100%;
-        min-height: 390px;
-        padding: 10px 30px;
+        min-height: 300x;
+        padding: 10px 30px 5px 30px;
         border: 1px solid #DDDDDD;
         border-radius: 10px;
         margin-top: 30px;
@@ -1192,7 +1361,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
         font-size: 63px;
         color: #9a9a9a;
         width: 85px;
-        height: 85px;
+        height: 60px;
         line-height: 80px;
         text-align: center;
         border-radius: 50%;
@@ -1244,7 +1413,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
   }
   .landing-page .section-testimonial .carousel{
     margin-top: 50px;
-    
+    max-width: 100%;
   }
     .landing-page .section-testimonial .carousel-inner .item .mask{
       width: 100px;
@@ -1410,6 +1579,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
 .fa{
     width: auto;
 }
+/* .fa-info-circle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  size: 10px;
+} */
 
 .fixed-plugin h5{
     font-size: 1em;
@@ -1679,10 +1854,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
     height: auto;
   }
   .landing-page .carousel-indicators{
-    bottom: -30px;
+    bottom: -20px;
   }
   .landing-page .carousel{
-    min-height: 210px;
+    min-height: 200px;
   }
   .footer nav.pull-left, .footer:not(.footer-big) nav > ul li, .pull-right {
     float: none !important;
@@ -1693,4 +1868,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
     .landing-page .navbar-top{
         padding-top: 10px;
     }
+}
+
+.text{
+  color: white;
 }
